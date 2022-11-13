@@ -66,6 +66,13 @@ const streamer = (stream, opts) => {
     index = (index + 1) % frames.length;
 
     stream.push(colors[colorsOptions[newColor]]("helloooo bucks liro ccdkkl;llccdkkkkkkkkkkkkkkkd,.c;     \r\n     .lol:;;okkkkkxooc::coodkkkkkkkkkkkko'.oc     \r\n   .c:'"));
+
+    //let corAtual =colorsOptions[newColor];
+    let corAtual = "blue";
+
+    stream.push(colors[corAtual]("helloooo bucks liro ccdkkl;llccdkkkkkkkkkkkkkkkd,.c;     \r\n     .lol:;;okkkkkxooc::coodkkkkkkkkkkkko'.oc     \r\n   .c:'"));
+    
+
     //stream.push('\033[2J\033[3J\033[H');
 
   }, 70);
