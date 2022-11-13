@@ -57,13 +57,17 @@ const streamer = (stream, opts) => {
 
   return setInterval(() => {
     // clear the screen
-    stream.push('\033[2J\033[3J\033[H');
+   
 
     const newColor = lastColor = selectColor(lastColor);
 
-    stream.push(colors[colorsOptions[newColor]](frames[index]));
+    // stream.push(colors[colorsOptions[newColor]](frames[index]));
 
     index = (index + 1) % frames.length;
+
+    stream.push(colors[colorsOptions[newColor]]("helloooo bucks liro ccdkkl;llccdkkkkkkkkkkkkkkkd,.c;     \r\n     .lol:;;okkkkkxooc::coodkkkkkkkkkkkko'.oc     \r\n   .c:'"));
+    //stream.push('\033[2J\033[3J\033[H');
+
   }, 70);
 };
 
@@ -73,6 +77,11 @@ const validateQuery = ({ flip }) => ({
 
 const server = http.createServer((req, res) => {
   if (req.url === '/healthcheck') {
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    return res.end(JSON.stringify({status: 'ok'}));
+  }
+
+  if (req.url === '/bucks') {
     res.writeHead(200, { 'Content-Type': 'application/json' });
     return res.end(JSON.stringify({status: 'ok'}));
   }

@@ -6,18 +6,27 @@ An initiative, using frames from [`terminal-parrot`](https://github.com/jmhobbs/
 ```bash
 curl parrot.live
 ```
+cd pasta do projeto
 
-# :partyparrot:
-<div align="center">
-  <img src='https://d.pr/i/jKluc0.gif' />
-</div>
+git clone git@github.com:milocaetano/parrot.live.git
 
-# Thanks
-* [jmhobbs](https://github.com/jmhobbs) for [`terminal-parrot`](https://github.com/jmhobbs/terminal-parrot), and for the animation frames
-* [Robert Koch](https://github.com/kochie/) and [Eric Jiang](https://github.com/lorderikir) for testing it, and giving feedback ⭐
+cd parrot.live
 
-# More Parrots
-* [cultofthepartyparrot.com](http://cultofthepartyparrot.com/)
-* [`terminal-parrot`](https://github.com/jmhobbs/terminal-parrot)
-* [`parrotsay`](https://github.com/matheuss/parrotsay)
-* [`ascii.live`](https://github.com/hugomd/ascii.live)
+code . 
+
+###abriu o vscode
+
+abre o terminal 
+
+npm install 
+
+node index.js
+
+## localhost:3000
+
+
+curl localhost:3000
+
+
+
+
